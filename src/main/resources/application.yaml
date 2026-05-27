@@ -1,3 +1,11 @@
 spring:
   application:
     name: aspmanager-auth-service
+
+jwt:
+  secret: "dsdadsaxzczx-teste"
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
