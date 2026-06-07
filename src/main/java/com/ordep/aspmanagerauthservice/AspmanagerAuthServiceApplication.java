@@ -30,7 +30,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
         security = @SecurityRequirement(name = "bearerAuth"),
         servers = {
         @Server(url = "http://localhost:8081", description = "Ambiente Local (Desenvolvimento)"),
-        @Server(url = "http://localhost:8080/auth", description = "API Gateway (Produção)")
+        @Server(url = "http://localhost:8080", description = "API Gateway (Produção)")
     }
 )
 @EnableFeignClients
