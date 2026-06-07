@@ -34,6 +34,14 @@ import io.swagger.v3.oas.annotations.servers.Server;
         @Server(url = "http://localhost:8080", description = "API Gateway (Produção)")
     }
 )
+@SecurityScheme(
+        name = "bearerAuth",
+        description = "JWT Token access",
+        scheme = "bearer",
+        type = SecuritySchemeType.HTTP,
+        bearerFormat = "JWT",
+        in = SecuritySchemeIn.HEADER
+)
 @EnableFeignClients
 @EnableDiscoveryClient
 public class AspmanagerAuthServiceApplication {
