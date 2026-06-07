@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 @FeignClient(name = "ASPMANAGER-USUARIO-SERVICE")
 public interface UsuarioClient {
-    @GetMapping("/api/v1/usuarios/email/{email}")
+    @GetMapping("/api/v1/usuario/email/{email}")
     UsuarioAuthResponse buscarPorEmail(@PathVariable String email);
 }
